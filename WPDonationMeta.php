@@ -54,7 +54,7 @@ class WPDonationMeta {
 	}
 
 	public function donation_button($content = '') {
-		$donation_button  = "<a href='"..constant('WPDonationMeta_PLUGIN_URL')."DonatePopUp.php'>";
+		$donation_button  = "<a href='".constant('WPDonationMeta_PLUGIN_URL')."DonatePopUp.php'>";
 		$donation_button .= "<img src='".constant('WPDonationMeta_PLUGIN_URL')."images/donation_button.png'";
 		$donation_button .= "alt='Donate now with PayPal...' title='Donate now with PayPal...' />";
 		$donation_button .= "</a>";
