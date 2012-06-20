@@ -43,6 +43,13 @@ class WPDonationMeta {
 
 	public function __construct() {
 
+		wp_enqueue_script('jquery');
+
+		/* Colorbox */
+		wp_register_style('colorbox_css', constant('WPDonationMeta_PLUGIN_URL') . '/css/colorbox.css');
+		wp_enqueue_style('colorbox_css');
+		wp_register_script('colorbox', constant('WPDonationMeta_PLUGIN_URL') . '/js/jquery.colorbox-min.js');
+		wp_enqueue_script('colorbox');
 	}
 }
 
