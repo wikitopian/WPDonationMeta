@@ -43,13 +43,21 @@ class WPDonationMeta {
 
 	public function __construct() {
 
-		wp_enqueue_script('jquery');
+		add_filter('the_content', array(&$this, 'donation_button'));
 
 		/* Colorbox */
+		wp_enqueue_script('jquery');
 		wp_register_style('colorbox_css', constant('WPDonationMeta_PLUGIN_URL') . '/css/colorbox.css');
 		wp_enqueue_style('colorbox_css');
 		wp_register_script('colorbox', constant('WPDonationMeta_PLUGIN_URL') . '/js/jquery.colorbox-min.js', array('jquery'));
 		wp_enqueue_script('colorbox');
+	}
+
+	public function donation_button($content = '') {
+		$donation_button = "ADDED";
+		$content .= $donation_button;
+
+		return $content;
 	}
 }
 
