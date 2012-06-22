@@ -1,3 +1,21 @@
+/*
+Full Name: ___________________________
+
+Address:     ___________________________
+
+Occupation: __________________________
+
+Telephone:  ___________________________
+
+Contribution Enclosed: $_________________($2,300 maximum)
+
+Other contributions
+
+□   Yard sign    □  Door knocking   □ Phone    □  Event
+
+□   You tell us _______________________________
+
+*/
 <html>
 	<head>
 		<title>
